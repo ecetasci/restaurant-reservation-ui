@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- IMPORT BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- IMPORT CSS FILES -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+
+    <!--  LINKING SWIPER CSS -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- IMPORT GOOGLE ICONS -->
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- IMPORT CDNJS HREF -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Restaurant Reservation</title>
+</head>
+<body>
+<!-- ---------------------------HEADER START HERE--------------------------- -->
+<nav class="navbar navbar-dark fixed-top">
+    <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand menu-logo" href="index.html">Restaurant</a>
+
+        <!-- menu -->
+        <div class="offcanvas-body menu">
+            <ul class="navbar-nav">
+                <li class="menu-item"><a href="home.html">Home</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#service">Service</a></li>
+                <li class="menu-item"><a href="#menu">Menu</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- mobile menu icon -->
+        <div class="nav-buttons">
+            <button class="btn btn-yellow rezerv-popup" id="rezerv-popup" type="submit">
+                Book a table
+            </button>
+            <button class="btn btn-yellow-border" type="submit">login</button>
+        </div>
+
+        <button id="admin-login" class="btn btn-yellow-border">Admin Login</button>
+
+
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- mobile menu -->
+        <div
+                class="offcanvas offcanvas-end sidebar-menu"
+                tabindex="-1"
+                id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+            <div class="offcanvas-header">
+                <h5
+                        class="offcanvas-title sidebar-logo"
+                        id="offcanvasDarkNavbarLabel"
+                >
+                    Restaurant
+                </h5>
+                <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                ></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html">Home</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="flex-container social-media">
+                    <div class="social-icon">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </div>
+                    <div class="social-icon">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                    <div class="social-icon">
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                    <div class="social-icon">
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- ---------------------------HEADER END HERE--------------------------- -->
+
+<!-- ---------------------------SLIDER START HERE--------------------------- -->
+
+<div class="slider-container">
+    <!-- slider list items -->
+    <div class="slider-wrapper swiper-wrapper">
+        <div class="slider-item swiper-slide">
+            <div class="slide-content">
+                <h3 class="slide-subtitle">Slide 01</h3>
+                <h2 class="slide-title">
+                    Discover the finest flavors of world cuisine in one place.
+                </h2>
+                <p class="slide-descrition">
+                    Join us for a delightful dining experience with dishes crafted by our expert chefs using the freshest ingredients.
+                </p>
+                <a href="#" class="slide-button"><span>Learn More</span></a>
+            </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+            <div class="slide-content">
+                <h3 class="slide-subtitle">Slide 02</h3>
+                <h2 class="slide-title">Elegance and taste in every detail.</h2>
+                <p class="slide-descrition">
+                    From the ambiance to the service, we aim to make every moment unforgettable for you and your loved ones.
+                </p>
+                <a href="#" class="slide-button"><span>Learn More</span></a>
+            </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+            <div class="slide-content">
+                <h3 class="slide-subtitle">Slide 03</h3>
+                <h2 class="slide-title">Handcrafted meals made with love.</h2>
+                <p class="slide-descrition">
+                    Taste the difference in our handcrafted meals, prepared with passion and attention to every ingredient.
+                </p>
+                <a href="#" class="slide-button"><span>Learn More</span></a>
+            </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+            <div class="slide-content">
+                <h3 class="slide-subtitle">Slide 04</h3>
+                <h2 class="slide-title">
+                    The perfect setting for every occasion.
+                </h2>
+                <p class="slide-descrition">
+                    Whether it’s a romantic dinner or a family celebration, our restaurant offers the ideal atmosphere.
+                </p>
+                <a href="#" class="slide-button"><span>Learn More</span></a>
+            </div>
+        </div>
+
+        <div class="slider-item swiper-slide">
+            <div class="slide-content">
+                <h3 class="slide-subtitle">Slide 05</h3>
+                <h2 class="slide-title">
+                    Reserve your table and enjoy culinary excellence.
+                </h2>
+                <p class="slide-descrition">
+                    Book now to enjoy our seasonal specials, signature dishes, and top-tier service in a warm ambiance.
+                </p>
+                <a href="#" class="slide-button"><span>Learn More</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider pagination -->
+    <div class="slider-controls">
+        <ul class="slider-pagination">
+            <div class="slider-indicator"></div>
+
+            <li class="slider-tab">Global Flavors</li>
+            <li class="slider-tab">Elegant Atmosphere</li>
+            <li class="slider-tab">Fresh Ingredients</li>
+            <li class="slider-tab">Perfect Moments</li>
+            <li class="slider-tab">Easy Reservations</li>
+        </ul>
+    </div>
+    <!-- slider navigations (prev-next) -->
+    <div class="slider-navigations">
+        <button class="material-symbols-rounded" id="slide-prev">
+            arrow_left_alt
+        </button>
+        <button class="material-symbols-rounded" id="slide-next">
+            arrow_right_alt
+        </button>
+    </div>
+</div>
+
+<!-- ---------------------------SLIDER END HERE--------------------------- -->
+
+
+<!-- ---------------------------SECTION START HERE--------------------------- -->
+
+<section class="container section">
+    <!-- ---------------------------SERVICES START HERE--------------------------- -->
+    <div class="row">
+        <div class="services-card my-5">
+            <div class="col-3 card text-center mb-3">
+                <div class="card-body">
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined"> calendar_month </span>
+                    </div>
+                    <h5 class="card-title">table reservation</h5>
+                    <p class="card-text">
+                        You can easily arrange the date and time you want in our
+                        restaurant. <br/>
+                        You can reserve your table now quickly and securely with our
+                        online reservation system.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3 card text-center mb-3">
+                <div class="card-body">
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined"> check_circle </span>
+                    </div>
+                    <h5 class="card-title">Fully Hygienic Meal</h5>
+                    <p class="card-text">
+                        All meals in our restaurant are prepared in full compliance with
+                        hygienic rules and health performance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3 card text-center mb-3">
+                <div class="card-body">
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined"> restaurant </span>
+                    </div>
+                    <h5 class="card-title">Healthy Food</h5>
+                    <p class="card-text">
+                        We offer a balanced and delicious dining experience with our
+                        healthy menus prepared using fresh and natural ingredients.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-3 card text-center mb-3">
+                <div class="card-body">
+                    <div class="card-icon">
+                        <span class="material-symbols-outlined"> cake </span>
+                    </div>
+                    <h5 class="card-title">Special Day & Organization Services</h5>
+                    <p class="card-text">
+                        Our restaurant is the ideal place to make your special occasions
+                        spectacular.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------SERVICES END HERE--------------------------- -->
+
+    <!-- ---------------------------ABOUT START HERE--------------------------- -->
+
+    <div class="row my-5">
+        <div class="col-lg-5 col-sm-12 about-photo">
+            <!-- <img src="images/about/about-photo.png" alt=""> -->
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/about/photo4.jpg" alt=""/>
+                </div>
+                <div class="col-6">
+                    <div class="about-photo-80 first">
+                        <img src="images/about/photo1.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="about-photo-80 second">
+                        <img src="images/about/photo2.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="images/about/photo3.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 col-sm-12 about-paragraph" id="about">
+            <h4>About Us <span></span></h4>
+            <h2>Welcome to <span>Restaurant</span></h2>
+            <p>
+                At Restaurant, we blend tradition with innovation to deliver exceptional dining experiences. For over 30
+                years, our team has been dedicated to serving delicious meals in a warm, welcoming atmosphere.
+
+            </p>
+            <p>
+                Whether you're here for a casual meal, a family gathering, or a special event, we ensure every
+                reservation is treated with care and attention. With over 500+ reservations annually, we are proud to be
+                a trusted destination for food lovers.
+            </p>
+
+            <div class="row counters p-3">
+                <div class="col-lg-6 col-sm-12 counter-card">
+                    <div class="col-lg-4 counter-num">
+                        <p>+<span class="counter">30</span></p>
+                    </div>
+                    <div class="col-lg-8 counter-text">
+                        <h6>Years of</h6>
+                        <h4>Experience</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 counter-card">
+                    <div class="col-lg-4 counter-num">
+                        <p>+<span class="counter">500</span></p>
+                    </div>
+                    <div class="col-lg-8 counter-text">
+                        <h6>within the year</h6>
+                        <h4>reservation</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-btn">
+                <button class="btn btn-yellow rezerv-popup" type="submit" id="rezerv-popup-bottom" >
+                    Book a table
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------ABOUT END HERE--------------------------- -->
+    <!-- ---------------------------TEAM START HERE--------------------------- -->
+    <div class="row m-xs-0">
+        <div class="section-title">
+            <h2>Our popular chefs <span></span></h2>
+            <h5>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sit.
+            </h5>
+        </div>
+        <div class="team-section my-5">
+            <div class="col-lg-3 col-md-6 col-xs-12 col-sm-12 card">
+                <img
+                        src="images/team/chef1.jpg"
+                        class="card-img-top"
+                        alt="Chef 1"
+                />
+                <div class="card-body">
+                    <h3>John Doe</h3>
+                    <h4>Western food chef</h4>
+                </div>
+
+                <div class="social-media">
+                    <div class="social-media-item">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-threads"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12 col-sm-12 card">
+                <img
+                        src="images/team/chef2.jpg"
+                        class="card-img-top"
+                        alt="Chef 1"
+                />
+                <div class="card-body">
+                    <h3>John Doe</h3>
+                    <h4>Oriental food chef</h4>
+                </div>
+
+                <div class="social-media">
+                    <div class="social-media-item">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-threads"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12 col-sm-12 card">
+                <img
+                        src="images/team/chef1.jpg"
+                        class="card-img-top"
+                        alt="Chef 1"
+                />
+                <div class="card-body">
+                    <h3>John Doe</h3>
+                    <h4>pastry chef</h4>
+                </div>
+
+                <div class="social-media">
+                    <div class="social-media-item">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-threads"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-xs-12 col-sm-12 card">
+                <img
+                        src="images/team/chef1.jpg"
+                        class="card-img-top"
+                        alt="Chef 1"
+                />
+                <div class="card-body">
+                    <h3>John Doe</h3>
+                    <h4>pastry chef</h4>
+                </div>
+
+                <div class="social-media">
+                    <div class="social-media-item">
+                        <i class="bi bi-facebook"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-instagram"></i>
+                    </div>
+                    <div class="social-media-item">
+                        <i class="bi bi-threads"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------TEAM END HERE--------------------------- -->
+    <!-- ---------------------------MENU START HERE--------------------------- -->
+
+    <div class="row my-5 food-menu" id="menu">
+        <div class="section-title">
+            <h2>Our Food Menu <span></span></h2>
+            <h5>
+                Taste the difference with our chef’s special recipes.
+            </h5>
+        </div>
+        <div class="tabs-box">
+            <button class="tab-btn active">main dishes</button>
+            <button class="tab-btn">fast food</button>
+            <button class="tab-btn">Soups</button>
+            <button class="tab-btn">Salads</button>
+            <button class="tab-btn">appetizers</button>
+            <button class="tab-btn">sweets</button>
+            <div class="line"></div>
+        </div>
+
+        <div class="content-box">
+            <!-- main dishes -->
+            <div class="content food-section active">
+                <h2>
+                    main dishes
+                    <hr/>
+                </h2>
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/izgara-karisik.jpg" alt="Mixed Grill"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>mixed grill</h1>
+                        <p>
+                            Chops, beef steak, meatballs, lamb shish, tenderloin, urfa and
+                            adana kebab
+                        </p>
+                    </div>
+                    <div class="food-price">$150</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/lahmacun.jpg" alt="Lahmacun"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>lahmacun</h1>
+                        <p>
+                            lahmacun, Cheese Lahmacun, Garlic Lahmacun and Hazelnut
+                            Lahmacun
+                        </p>
+                    </div>
+                    <div class="food-price">$35</div>
+                </div>
+            </div>
+
+            <!-- fast food -->
+            <div class="content food-section">
+                <h2>
+                    Fast Food
+                    <hr/>
+                </h2>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/burger.jpg" alt="Meat Burger"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Meat Burger</h1>
+                        <p>
+                            Beef, Louisiana Sauce, Greens, Pickles, Caramelized Onion,
+                            Jalapeno Pepper, Roasted Pepper and Cheddar Cheese
+                        </p>
+                    </div>
+                    <div class="food-price">$45</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/tavuk-burger.jpg" alt="Chicken Burger"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Chicken Burger</h1>
+                        <p>Chicken Meat, Mayonnaise, Pickles and Greens</p>
+                    </div>
+                    <div class="food-price">$38</div>
+                </div>
+            </div>
+
+            <!-- Soups -->
+            <div class="content food-section">
+                <h2>
+                    Soups
+                    <hr/>
+                </h2>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/mercimek-corbasi.jpg" alt="Lentil Soup"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Lentil Soup</h1>
+                        <p>red lentils</p>
+                    </div>
+                    <div class="food-price">$8</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/domates-corbasi.jpg" alt="Tomato Soup"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Tomato Soup</h1>
+                        <p>Tomato</p>
+                    </div>
+                    <div class="food-price">$10</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/mantar-corbasi.jpg" alt="Mushroom Soup"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Mushroom Soup</h1>
+                        <p>Mushroom</p>
+                    </div>
+                    <div class="food-price">$12</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/sebze-corbasi.jpg" alt="Vegetable Soup"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Vegetable soup</h1>
+                        <p>Potatoes, carrots, noodles, peas and onions</p>
+                    </div>
+                    <div class="food-price">$12</div>
+                </div>
+            </div>
+
+            <!-- Salads -->
+            <div class="content food-section">
+                <h2>
+                    Salads
+                    <hr/>
+                </h2>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img
+                                src="images/menu/broccoli-salad.jpg"
+                                alt="Broccoli salad"
+                        />
+                    </div>
+                    <div class="food-details">
+                        <h1>Broccoli salad</h1>
+                        <p>Broccoli, red pepper, green pepper, red cabbage</p>
+                    </div>
+                    <div class="food-price">$25</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img
+                                src="images/menu/vegetable-roka-salad.jpg"
+                                alt="Vegetable Roka Salad"
+                        />
+                    </div>
+                    <div class="food-details">
+                        <h1>Vegetable Roka Salad</h1>
+                        <p>feta white cheese, green salad, tomatoes and olives.</p>
+                    </div>
+                    <div class="food-price">$22</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/cabbage-salad.jpg" alt="Cabbage Salad"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>cabbage salad</h1>
+                        <p>Red cabbage, carrot, parsley, red and green peppers</p>
+                    </div>
+                    <div class="food-price">$15</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img
+                                src="images/menu/choban-shepherd-salad.jpg"
+                                alt="Choban Shepherd Salad"
+                        />
+                    </div>
+                    <div class="food-details">
+                        <h1>Choban shepherd salad</h1>
+                        <p>tomatoes, lettuce, cucumber and lemon</p>
+                    </div>
+                    <div class="food-price">$12</div>
+                </div>
+            </div>
+
+            <!-- appetizers -->
+            <div class="content food-section">
+                <h2>
+                    appetizers
+                    <hr/>
+                </h2>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/muhammara.jpg" alt="Muhammara"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Muhammara</h1>
+                        <p></p>
+                    </div>
+                    <div class="food-price">$5</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/humus.jpg" alt="Hummus"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Hummus</h1>
+                        <p>
+                            Pumpkin Hummus, Beetroot Hummus, Ginger Hummus, Basil Hummus
+                            and Hummus with roasted eggplant
+                        </p>
+                    </div>
+                    <div class="food-price">$10</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/cacik.jpg" alt="Tzatziki"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>Tzatziki</h1>
+                        <p>purslane tzatziki, cucumber tzatziki and lettuce tzatziki</p>
+                    </div>
+                    <div class="food-price">$4</div>
+                </div>
+            </div>
+
+            <!-- sweets -->
+            <div class="content food-section">
+                <h2>
+                    sweets
+                    <hr/>
+                </h2>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img
+                                src="images/menu/fistikli-baklava.jpg"
+                                alt="Pistachio Baklava"
+                        />
+                    </div>
+                    <div class="food-details">
+                        <h1>pistachio Baklava</h1>
+                        <p></p>
+                    </div>
+                    <div class="food-price">$35</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img
+                                src="images/menu/cevizli-baklava.jpg"
+                                alt="Walnut Baklava"
+                        />
+                    </div>
+                    <div class="food-details">
+                        <h1>Walnut baklava</h1>
+                    </div>
+                    <div class="food-price">$30</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img
+                                src="images/menu/raspberry-cheesecake.jpg"
+                                alt="Cheesecake"
+                        />
+                    </div>
+                    <div class="food-details">
+                        <h1>Chesscake</h1>
+                        <p>
+                            Fresh raspberry, lemon, San Sebastian, Brownie, Cherry,
+                            Strawberry , chocolate, Käsekuchen and forest fruit cheesecake
+                        </p>
+                    </div>
+                    <div class="food-price">$28</div>
+                </div>
+
+                <div class="food-item">
+                    <div class="food-image">
+                        <img src="images/menu/rice-pudding.jpg" alt="Rice Pudding"/>
+                    </div>
+                    <div class="food-details">
+                        <h1>rice pudding</h1>
+                        <p>
+                            Starchy, Starch-free, Mastic gum, lemon and Caramel Rice
+                            Pudding
+                        </p>
+                    </div>
+                    <div class="food-price">$15</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------MENu END HERE--------------------------- -->
+    <!-- ---------------------------Reservation START HERE--------------------------- -->
+
+    <dialog>
+        <div class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="form">
+            <!--
+            <div class="form-header">
+              <h2>Book a Table</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
+                veniam obcaecati? Iste fugit recusandae quisquam perspiciatis
+                eligendi. Perferendis, ipsam doloribus.
+              </p>
+            </div> -->
+            <div class="form-body">
+                <div class="pagination">
+                    <div class="number active">1</div>
+                    <div class="bar"></div>
+                    <div class="number">2</div>
+                    <div class="bar"></div>
+                    <div class="number">3</div>
+                    <div class="bar"></div>
+                    <div class="number">4</div>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <h4>Contact details</h4>
+                        <p>Please enter your information</p>
+                        <div class="grid">
+                            <div class="col">
+                                <label for="name">Name</label>
+                                <input type="text" id="name"/>
+                            </div>
+                            <div class="col">
+                                <label for="email">Email</label>
+                                <input type="email" id="email"/>
+                            </div>
+                            <div class="col">
+                                <label for="phone">Phone Number</label>
+                                <input
+                                        type="tel"
+                                        id="phone"
+                                        inputmode="numeric"
+                                        pattern="0[0-9]{9}"
+                                        placeholder="0XXXXXXXXX"
+                                        maxlength="10"
+                                        title="Please enter a 10-digit number starting with 0"
+                                />
+                            </div>
+
+                            <div class="col">
+                                <label for="message">Message</label>
+                                <input type="text" id="message"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <h4>No Of People</h4>
+                        <p>
+                            Please select how many people will attend the reservation. You can choose between 1 and 10
+                            guests.
+                        </p>
+                        <div class="guest-count-selection reserv-card"></div>
+                    </div>
+                    <div class="step">
+                        <h4>Reservation Date</h4>
+                        <p></p>
+
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <div id="prev" class="btn">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                                <div class="month-year"></div>
+                                <div id="next" class="btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+
+                            <div class="days"></div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <h4>Reservation Time</h4>
+                        <p>
+                            Please choose a time slot for your reservation. Available hours range from 13:00 to 21:00.
+                        </p>
+
+                        <div class="reserv-time-selection reserv-card">
+                            <!-- <div class="time-selection-item">
+                              <h3 class="time-selection-label"></h3>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button class="form-prev btn" disabled>Previous</button>
+                <button class="form-next btn" id="sendButton">Next</button>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- ---------------------------Reservation END HERE--------------------------- -->
+
+
+    <dialog id="reservationPopup" class="reservation-popup">
+        <div class="popup-content">
+            <div class="popup-header d-flex justify-content-between align-items-center">
+                <h3 class="m-0">My Reservations</h3>
+                <button class="btn btn-sm btn-danger close-popup">&times;</button>
+            </div>
+            <div id="reservationList" class="mt-3">
+                <!-- Rezervasyon kartları buraya JS ile eklenecek -->
+            </div>
+        </div>
+    </dialog>
+
+
+    <!-- ---------------------------SECTION END HERE--------------------------- -->
+
+    <!-- ---------------------------FOOTER START HERE--------------------------- -->
+
+    <footer class="footer" id="contact">
+
+    <div class="row">
+            <div class="col-lg-4 col-md-12">
+                <div class="footer-logo">
+                    <a class="navbar-brand menu-logo" href="#home">Restaurant</a>
+                </div>
+                <div class="footer-about">
+                    <p>
+                        Welcome to our restaurant, where quality meets taste.
+                        Enjoy delicious meals prepared with fresh ingredients in a cozy atmosphere.
+                        Perfect for family dinners, casual outings, and special occasions.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-12">
+                <h4>Pages</h4>
+                <ul>
+                    <li>
+                        <a href="home.html"><span class="line"></span>Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"><span></span>About</a>
+                    </li>
+                    <li>
+                        <a href="#service"><span></span>Service</a>
+                    </li>
+                    <li>
+                        <a href="#menu"><span></span>menu</a>
+                    </li>
+                    <li>
+                        <a href="contact"><span></span>contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <h4>Contact us</h4>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>İstanbul/Turkey</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i
+                        ><span
+                    ><a href="mailto:restaurant@gmail.com"
+                    >restaurant@gmail.com</a
+                    ></span
+                    >
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i
+                        ><span><a href="tel:+905123456789">0512 345 67 89</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12">
+
+                <h4>Newsletter</h4>
+                <form action="" class="footer-enter-mail">
+                    <input
+                            type="email"
+                            placeholder="Enter your email id"
+                            class="enter-mail"
+                            required
+                    />
+                    <button type="submit">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+
+
+                </form>
+                <div class="social-media-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="row">
+            <div class="copyright-text">
+                <p>Copyright © 2025 Restaurant. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------FOOTER END HERE--------------------------- -->
+
+    <!-- IMPORT BOOTSTRAP JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- LINKING SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+
+    <!-- LINKING COUNTER JS -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script>
+        $(".counter").counterUp({
+            delay: 10,
+            time: 3000,
+        });
+    </script>
+
+    <!-- IMPORT TABS MENU JS -->
+    <script src="js/tabsmenu.js"></script>
+
+    <!-- IMPORT RESERVATION JS -->
+    <script src="js/reservation.js"></script>
+</body>
+</html>
